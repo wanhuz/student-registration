@@ -2,11 +2,38 @@
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
-        <!-- Name -->
+        <!-- Username -->
         <div>
-            <x-input-label for="name" :value="__('Name')" />
+            <x-input-label for="name" :value="__('Username')" />
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
+        </div>
+
+        <!-- Full name -->
+        <div class="mt-4">
+            <x-input-label for="full_name" :value="__('Full Name')" />
+            <x-text-input id="full_name" class="block mt-1 w-full" type="text" name="full_name" :value="old('full_name')" required autofocus autocomplete="full_name" />
+            <x-input-error :messages="$errors->get('full_name')" class="mt-2" />
+        </div>
+
+        <!-- Matric Number -->
+        <div class="mt-4">
+            <x-input-label for="matric_no" :value="__('Matric Number')" />
+            <x-text-input id="matric_no"  class="block mt-1 w-full" type="text" name="matric_no" :value="old('matric_no')" required autocomplete="matric_no" />
+            <x-input-error :messages="$errors->get('matric_no')" class="mt-2" />
+        </div>
+
+        <!-- Department -->
+        <div class="mt-4">
+            <x-input-label for="department" :value="__('Department')" />
+            <select id="department" name="department" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
+                <option value="" disabled selected>Select a Department</option>
+                <option value="ict">ICT</option>
+                <option value="engineering">Engineering</option>
+                <option value="law">Law</option>
+                <option value="language">Language</option>
+            </select>
+            <x-input-error :messages="$errors->get('department')" class="mt-2" />
         </div>
 
         <!-- Email Address -->
