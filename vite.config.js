@@ -9,7 +9,7 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/js/bootstrap.min.js',
                 'resources/css/bootstrap.min.css',
-                'resources/css/navbar.css',
+                'resources/css/navbar.css'
             ],
             refresh: true,
         }),
