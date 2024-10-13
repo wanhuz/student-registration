@@ -25,8 +25,8 @@
     </div>
     <div class="row">
         <div class="ms-auto mt-3">
-            <a href="/course/add">
-                <button class="btn btn-primary">Add course</button>
+            <a href="/course/add" class="btn btn-primary">
+                Add course
             </a>
             <a href="/course/remove">
                 <button class="btn btn-primary">Remove course</button>
