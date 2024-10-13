@@ -43,9 +43,5 @@
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-xl-8 mb-4 mb-lg-0">
-            <x-app.table></x-app.table>
-        </div>
-    </div>
+
 </x-app-layout>

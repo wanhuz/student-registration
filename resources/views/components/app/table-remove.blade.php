@@ -12,6 +12,7 @@
                         <th scope="col">Day</th>
                         <th scope="col">Time</th>
                         <th scope="col">Credit Hours</th>
+                        <th scope="col">Remove</th>
                     </tr>
                 </thead>
                 <tbody>

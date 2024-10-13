@@ -28,10 +28,9 @@
             <x-input-label for="department" :value="__('Department')" />
             <select id="department" name="department" class="block mt-1 w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm">
                 <option value="" disabled selected>Select a Department</option>
-                <option value="ict">ICT</option>
-                <option value="engineering">Engineering</option>
-                <option value="law">Law</option>
-                <option value="language">Language</option>
+                @foreach ($departments as $department)
+                    <option value="{{ $department->department }}">{{ $department->department }}</option>
+                @endforeach
             </select>
             <x-input-error :messages="$errors->get('department')" class="mt-2" />
         </div>
