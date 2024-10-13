@@ -64,7 +64,7 @@ class CourseRemoveController extends Controller
             $user->course()->detach($course_id);
         }
 
-        return redirect()->back()->with('success', 'Course added successfully!');
+        return redirect()->back()->with('success', 'Course remove successfully!');
     }
 
     private function getCourseId($course_code) {

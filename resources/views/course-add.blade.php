@@ -29,8 +29,14 @@
             <div class="row">
                 <div class="ms-auto mt-3">
                     <a href="/course" class="btn btn-primary">Back</a>
-                    <button class="btn btn-primary">Add course</button>
+                    <button class="btn btn-primary">Add</button>
                 </div>
+
+                @if(session('success'))
+                    <div class="mt-2 alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
             </div>
         </form>
 </x-app-layout>
