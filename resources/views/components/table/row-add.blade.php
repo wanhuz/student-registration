@@ -7,6 +7,6 @@
     <td>{{ $time }}</td>
     <td>{{ $credit_hours }}</td>
     <td>
-        <input name="courses[]" type="checkbox" value="{{ $code }}"></input>
+        <input name="courses_id[]" type="checkbox" value="{{ $id }}"></input>
     </td>
 </tr>

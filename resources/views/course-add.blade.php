@@ -11,6 +11,7 @@
                             <x-slot:content>
                                 @foreach($courses as $course)
                                     <x-table.row-add>
+                                        <x-slot:id>{{ $course->id }}</x-slot>
                                         <x-slot:code>{{ $course->code }}</x-slot>
                                         <x-slot:name>{{ $course->name }}</x-slot>
                                         <x-slot:section>{{ $course->section }}</x-slot>

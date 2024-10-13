@@ -1,5 +1,5 @@
 <x-app-layout>
-    <h1 class="h2">Dashboard</h1>
+    <h1 class="h2">Announcements</h1>
     <p>This is the homepage of a simple admin interface which is part of a tutorial written on Themesberg</p>
     <div class="row my-4">
         <div class="col-12 col-md-6 col-lg-3 mb-4 mb-lg-0">

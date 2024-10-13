@@ -1,4 +1,4 @@
-<nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+<nav id="sidebar" class="col-md-2 col-lg-1 d-md-block bg-light sidebar collapse">
     <div class="position-sticky">
         <ul class="nav flex-column">
             <x-nav-btn>
