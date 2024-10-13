@@ -43,6 +43,12 @@
                     Save changes
                 </button>
             </div>
+
+            @if(session('profile-success'))
+                <div class="mt-2 alert alert-success">
+                    {{ session('profile-success') }}
+                </div>
+            @endif
         </form>
 
     <p class="mt-5 h5">Password Management</p>
@@ -76,6 +82,12 @@
                 Save changes
             </button>
         </div>
+
+        @if(session('password-success'))
+        <div class="mt-2 alert alert-success">
+            {{ session('password-success') }}
+        </div>
+        @endif
     </form>
 
 </x-app-layout>
