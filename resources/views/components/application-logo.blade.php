@@ -1,1 +1,1 @@
-<img src="./logo.png"></img>
+<img src="/logo.png" {{ $attributes }}></img>
