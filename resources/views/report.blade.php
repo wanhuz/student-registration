@@ -1,5 +1,6 @@
 <x-app-layout>
-
+    <x-slot:directory>Report</x-slot>
+    <x-slot:subdirectory>Report</x-slot>
     <h1 class="h2">Course Report</h1>
 
     <div class="row my-4">

@@ -1,4 +1,7 @@
 <x-app-layout>
+    <x-slot:directory>Course</x-slot>
+    <x-slot:subdirectory>Course List</x-slot>
+    
     <div class="row">
         <div class=" mb-4 mb-lg-0">
             <x-app.table>

@@ -19,8 +19,8 @@
 
             <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4 py-4">
                 <x-directory>
-                  <x-slot:section>Home</x-slot>
-                  <x-slot:subsection>Home</x-slot>
+                  <x-slot:section>{{ $directory }}</x-slot>
+                  <x-slot:subsection>{{ $subdirectory }}</x-slot>
                 </x-directory>
 
                 {{ $slot }}

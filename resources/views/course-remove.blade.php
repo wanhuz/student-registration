@@ -1,4 +1,6 @@
 <x-app-layout>
+    <x-slot:directory>Course</x-slot>
+    <x-slot:subdirectory>Remove Course</x-slot>
         <div class="row">
             <div class="mb-4 mb-lg-0">
                 <form method="POST" action="{{ route('user_remove_course') }}">
@@ -8,6 +10,7 @@
                             <x-slot:content>
                                 @foreach($courses as $course)
                                     <x-table.row-add>
+                                        <x-slot:id>{{ $course->id }}</x-slot>
                                         <x-slot:code>{{ $course->code }}</x-slot>
                                         <x-slot:name>{{ $course->name }}</x-slot>
                                         <x-slot:section>{{ $course->section }}</x-slot>

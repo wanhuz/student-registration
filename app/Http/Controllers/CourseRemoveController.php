@@ -57,16 +57,11 @@ class CourseRemoveController extends Controller
     }
 
     public function delete(Request $request) {
-        $selected_courses_code = $request->input('courses');
+        $selected_courses_id = $request->input('courses_id');
         $user = auth()->user();
 
-        foreach($selected_courses_code as $course_code) {
-            $course_id = $this->getCourseId($course_code);
-
-            if ($course_id) {
-                $user->course()->detach($course_id);
-            }
-            
+        foreach($selected_courses_id as $course_id) {
+            $user->course()->detach($course_id);
         }
 
         return redirect()->back()->with('success', 'Course added successfully!');
